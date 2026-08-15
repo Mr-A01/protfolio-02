@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Award-winning creative developer crafting cinematic digital experiences with Three.js, WebGL and premium motion design." />
+  <meta name="theme-color" content="#030305" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alexrivera.dev/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mr.A — Creative Developer" />
+  <meta property="og:description" content="Award-winning creative developer crafting cinematic digital experiences." />
+  <meta property="og:url" content="https://alexrivera.dev/" />
+  <meta property="og:image" content="https://alexrivera.dev/og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mr.A — Creative Developer" />
+  <meta name="twitter:description" content="Award-winning creative developer crafting cinematic digital experiences." />
+
+  <title>Mr.A — Creative Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mr.A",
+    "jobTitle": "Creative Developer",
+    "url": "https://alexrivera.dev",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__logo" aria-hidden="true"></div>
+    <p class="loader__text" data-i18n="loader.loading">Loading experience</p>
+    <div class="loader__bar">
+      <div class="loader__progress" id="loaderProgress"></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <canvas id="webgl" aria-hidden="true"></canvas>
+
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="logo" data-magnetic>
+        <span class="logo__mark" aria-hidden="true"></span>
+        <span data-i18n="hero.name">Mr.A</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" class="nav__link" data-i18n="nav.about">About</a>
+        <a href="#services" class="nav__link" data-i18n="nav.services">Services</a>
+        <a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a>
+        <a href="#process" class="nav__link" data-i18n="nav.process">Process</a>
+        <a href="#testimonials" class="nav__link" data-i18n="nav.testimonials">Clients</a>
+        <a href="#faq" class="nav__link" data-i18n="nav.faq">FAQ</a>
+        <a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language" type="button">
+          <span class="is-active" data-lang="en">EN</span>
+          <span data-lang="fa">FA</span>
+        </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="#about" data-i18n="nav.about">About</a>
+    <a href="#services" data-i18n="nav.services">Services</a>
+    <a href="#projects" data-i18n="nav.projects">Projects</a>
+    <a href="#process" data-i18n="nav.process">Process</a>
+    <a href="#testimonials" data-i18n="nav.testimonials">Clients</a>
+    <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    <a href="#contact" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="section hero" id="hero" data-section="hero">
+      <div class="hero__content">
+        <div class="hero__badge" data-i18n="hero.badge">Available for select projects · 2026</div>
+        <p class="hero__greeting" data-i18n="hero.greeting">Hello, I am</p>
+        <h1 class="hero__name" data-i18n="hero.name">Mr.A</h1>
+        <p class="hero__title" data-i18n="hero.title">Creative Developer</p>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">Crafting immersive digital experiences that blur the line between design and technology.</p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary" data-magnetic data-i18n="hero.ctaWork">View Work</a>
+          <a href="#contact" class="btn btn--ghost" data-magnetic data-i18n="hero.ctaContact">Start a Project</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about" data-section="about">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="about.label">About</p>
+        <h2 class="section__title" data-i18n="about.title">Building experiences that feel alive</h2>
+        <p class="section__text" data-i18n="about.p1">I am a creative developer specializing in cinematic web experiences, real-time 3D, and high-end interactive design.</p>
+        <p class="section__text" style="margin-top:1rem" data-i18n="about.p2">With a deep focus on performance, accessibility and emotional impact, I help brands and studios create digital products that feel premium.</p>
+        <div class="about__stats" id="aboutStats"></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" data-section="services">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="services.label">Services</p>
+        <h2 class="section__title" data-i18n="services.title">What I create</h2>
+        <div class="services__grid" id="servicesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills" data-section="skills">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="skills.label">Expertise</p>
+        <h2 class="section__title" data-i18n="skills.title">Technologies & Craft</h2>
+        <div class="skills__grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Tech marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <span>Three.js</span><span>WebGL</span><span>GSAP</span><span>GLSL</span>
+        <span>React</span><span>Next.js</span><span>TypeScript</span><span>WebXR</span>
+        <span>Shaders</span><span>Motion Design</span><span>Performance</span><span>Accessibility</span>
+        <span>Three.js</span><span>WebGL</span><span>GSAP</span><span>GLSL</span>
+        <span>React</span><span>Next.js</span><span>TypeScript</span><span>WebXR</span>
+        <span>Shaders</span><span>Motion Design</span><span>Performance</span><span>Accessibility</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section class="section" id="projects" data-section="projects">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="projects.label">Selected Work</p>
+        <h2 class="section__title" data-i18n="projects.title">Featured Projects</h2>
+        <div class="projects__filters" id="projectFilters" role="tablist"></div>
+        <div class="projects__grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section" id="process" data-section="process">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="process.label">Process</p>
+        <h2 class="section__title" data-i18n="process.title">How we work together</h2>
+        <div class="process__grid" id="processGrid"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience" data-section="experience">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="experience.label">Journey</p>
+        <h2 class="section__title" data-i18n="experience.title">Experience</h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials" data-section="testimonials">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="testimonials.label">Clients</p>
+        <h2 class="section__title" data-i18n="testimonials.title">What partners say</h2>
+        <div class="testimonials__grid" id="testimonialsGrid"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" data-section="faq">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="faq.label">FAQ</p>
+        <h2 class="section__title" data-i18n="faq.title">Common questions</h2>
+        <div class="faq__list" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact" data-section="contact">
+      <div class="section__inner">
+        <p class="section__label" data-i18n="contact.label">Contact</p>
+        <h2 class="section__title" data-i18n="contact.title">Let's create something exceptional</h2>
+        <p class="section__text" data-i18n="contact.subtitle">Currently accepting select projects for 2026.</p>
+        <a href="mailto:hello@alexrivera.dev" class="contact__email" data-magnetic>
+          <span data-i18n="contact.email">hello@alexrivera.dev</span>
+        </a>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" data-i18n="contact.form.name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact.form.email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary" data-magnetic data-i18n="contact.form.send">Send Message</button>
+          <p class="form-success" id="formSuccess" data-i18n="contact.form.success">Message sent. I'll be in touch soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p data-i18n="footer.rights">© 2026 Mr.A. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" aria-label="Dribbble">Dribbble</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+      <p class="footer__built" data-i18n="footer.built">Crafted with intention</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close-modal aria-label="Close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5"/></svg>
+      </button>
+      <p class="modal__cat" id="modalCat"></p>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__desc" id="modalDesc"></p>
+      <div class="modal__tags" id="modalTags"></div>
+    </div>
+  </div>
+
+  <script src="js/three.min.js"></script>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/lenis.min.js"></script>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
