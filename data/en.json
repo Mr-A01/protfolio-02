@@ -1,1 +1,224 @@
-
+{
+  "meta": {
+    "title": "Mr.A — Creative Developer",
+    "description": "Award-winning creative developer crafting cinematic digital experiences with Three.js, WebGL and premium motion design."
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "projects": "Projects",
+    "process": "Process",
+    "experience": "Experience",
+    "testimonials": "Clients",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "greeting": "Hello, I am",
+    "name": "Mr.A",
+    "title": "Creative Developer",
+    "subtitle": "Crafting immersive digital experiences that blur the line between design and technology.",
+    "badge": "Available for select projects · 2026",
+    "ctaWork": "View Work",
+    "ctaContact": "Start a Project",
+    "scroll": "Scroll"
+  },
+  "about": {
+    "label": "About",
+    "title": "Building experiences that feel alive",
+    "p1": "I am a creative developer specializing in cinematic web experiences, real-time 3D, and high-end interactive design. My work sits at the intersection of art direction, engineering and storytelling.",
+    "p2": "With a deep focus on performance, accessibility and emotional impact, I help brands and studios create digital products that feel premium, intentional and unforgettable.",
+    "stats": [
+      {
+        "value": "8+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "60+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "12",
+        "label": "Awwwards"
+      }
+    ]
+  },
+  "services": {
+    "label": "Services",
+    "title": "What I create",
+    "items": [
+      {
+        "icon": "01",
+        "title": "Immersive Web Experiences",
+        "desc": "Scroll-driven 3D websites and interactive brand worlds built with Three.js and WebGL."
+      },
+      {
+        "icon": "02",
+        "title": "Motion Systems",
+        "desc": "Bespoke animation languages and micro-interaction systems that feel physical and intentional."
+      },
+      {
+        "icon": "03",
+        "title": "Creative Technology",
+        "desc": "Shaders, generative visuals, real-time installations and experimental prototypes."
+      },
+      {
+        "icon": "04",
+        "title": "Product Interfaces",
+        "desc": "High-performance front-ends with refined design systems and accessibility at the core."
+      }
+    ]
+  },
+  "skills": {
+    "label": "Expertise",
+    "title": "Technologies & Craft",
+    "items": [
+      {
+        "name": "Three.js / WebGL",
+        "level": 95
+      },
+      {
+        "name": "GSAP & Motion",
+        "level": 92
+      },
+      {
+        "name": "Creative Coding",
+        "level": 90
+      },
+      {
+        "name": "React / Next.js",
+        "level": 88
+      },
+      {
+        "name": "GLSL Shaders",
+        "level": 85
+      },
+      {
+        "name": "Performance",
+        "level": 93
+      }
+    ]
+  },
+  "projects": {
+    "label": "Selected Work",
+    "title": "Featured Projects",
+    "filterAll": "All",
+    "viewProject": "View Project",
+    "close": "Close"
+  },
+  "process": {
+    "label": "Process",
+    "title": "How we work together",
+    "steps": [
+      {
+        "num": "01",
+        "title": "Discover",
+        "desc": "Deep dive into your brand, audience and goals. Define the emotional core of the experience."
+      },
+      {
+        "num": "02",
+        "title": "Design",
+        "desc": "Art direction, motion principles and interactive prototypes. Nothing is left to chance."
+      },
+      {
+        "num": "03",
+        "title": "Build",
+        "desc": "Pixel-perfect engineering with Three.js, GSAP and performance budgets from day one."
+      },
+      {
+        "num": "04",
+        "title": "Launch",
+        "desc": "Rigorous testing, accessibility audit and a smooth handoff — or ongoing partnership."
+      }
+    ]
+  },
+  "experience": {
+    "label": "Journey",
+    "title": "Experience",
+    "items": [
+      {
+        "role": "Lead Creative Developer",
+        "company": "Studio Nova",
+        "period": "2023 — Present",
+        "description": "Leading the interactive department, building award-winning immersive experiences for global brands."
+      },
+      {
+        "role": "Senior Front-End Engineer",
+        "company": "Aether Digital",
+        "period": "2020 — 2023",
+        "description": "Architected high-performance 3D websites and motion systems used by Fortune 500 clients."
+      },
+      {
+        "role": "Creative Technologist",
+        "company": "Independent",
+        "period": "2018 — 2020",
+        "description": "Collaborated with agencies and studios on experimental web experiences and installations."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Clients",
+    "title": "What partners say",
+    "items": [
+      {
+        "quote": "Alex transformed our digital presence into something people actually feel. The attention to motion and detail is unmatched.",
+        "name": "Sarah Chen",
+        "role": "Creative Director, Studio Nova"
+      },
+      {
+        "quote": "Working with Alex feels like having a co-founder for the experience layer. Technical excellence paired with real taste.",
+        "name": "Marcus Webb",
+        "role": "Founder, Horizon Bank"
+      },
+      {
+        "quote": "Every interaction was intentional. Our conversion rate improved, but more importantly — the brand finally felt premium.",
+        "name": "Elena Voss",
+        "role": "Head of Brand, Lumen Studio"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let’s create something exceptional",
+    "subtitle": "Currently accepting select projects for 2026.",
+    "emailLabel": "Email",
+    "email": "hello@alexrivera.dev",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Message sent. I’ll be in touch soon."
+    }
+  },
+  "footer": {
+    "rights": "© 2026 Mr.A. All rights reserved.",
+    "built": "Crafted with intention"
+  },
+  "loader": {
+    "loading": "Loading experience"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "What types of projects do you take on?",
+        "a": "I focus on immersive web experiences, 3D/WebGL sites, premium product interfaces, and motion systems for brands and studios that care about craft."
+      },
+      {
+        "q": "What does a typical engagement look like?",
+        "a": "Discovery → art direction & prototypes → build with performance budgets → launch & handoff. Timelines usually range from 4 to 16 weeks depending on scope."
+      },
+      {
+        "q": "Do you work with agencies or only direct clients?",
+        "a": "Both. I partner with agencies as a specialist on the experience layer, and with brands as a lead creative technologist."
+      },
+      {
+        "q": "How do we start?",
+        "a": "Send a short brief or book a call via the contact form. If there is a fit, we define scope, timeline and investment before any work begins."
+      }
+    ]
+  }
+}

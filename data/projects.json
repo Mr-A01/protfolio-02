@@ -1,0 +1,106 @@
+[
+  {
+    "id": "nebula",
+    "title": "Nebula Platform",
+    "category": "WebGL",
+    "year": "2025",
+    "description": "A real-time collaborative design platform featuring custom WebGL particle systems and cinematic transitions.",
+    "tags": [
+      "Three.js",
+      "GSAP",
+      "WebGL"
+    ],
+    "color": "#7c3aed"
+  },
+  {
+    "id": "horizon",
+    "title": "Horizon Bank",
+    "category": "Product",
+    "year": "2024",
+    "description": "Premium digital banking experience with fluid micro-interactions and accessibility-first architecture.",
+    "tags": [
+      "React",
+      "Motion",
+      "Design System"
+    ],
+    "color": "#6366f1"
+  },
+  {
+    "id": "lumen",
+    "title": "Lumen Studio",
+    "category": "Experience",
+    "year": "2024",
+    "description": "Immersive brand experience for a lighting design studio, featuring interactive light simulations.",
+    "tags": [
+      "Three.js",
+      "Shaders",
+      "Sound"
+    ],
+    "color": "#a855f7"
+  },
+  {
+    "id": "atlas",
+    "title": "Atlas Analytics",
+    "category": "Dashboard",
+    "year": "2023",
+    "description": "High-performance data visualization suite with real-time 3D charting and custom rendering pipeline.",
+    "tags": [
+      "WebGL",
+      "D3",
+      "Performance"
+    ],
+    "color": "#8b5cf6"
+  },
+  {
+    "id": "void",
+    "title": "Void Collective",
+    "category": "WebGL",
+    "year": "2023",
+    "description": "Experimental portfolio for a digital art collective with generative environments and audio reactivity.",
+    "tags": [
+      "Creative Coding",
+      "GLSL",
+      "Audio"
+    ],
+    "color": "#c084fc"
+  },
+  {
+    "id": "pulse",
+    "title": "Pulse Health",
+    "category": "Product",
+    "year": "2022",
+    "description": "Calm, precise health tracking interface with custom illustration system and motion language.",
+    "tags": [
+      "React",
+      "Illustration",
+      "UX"
+    ],
+    "color": "#9333ea"
+  },
+  {
+    "id": "orbit",
+    "title": "Orbit Gallery",
+    "category": "Experience",
+    "year": "2025",
+    "description": "Virtual exhibition space where artworks orbit a central singularity. Scroll to navigate rooms in 3D.",
+    "tags": [
+      "Three.js",
+      "WebXR",
+      "GSAP"
+    ],
+    "color": "#7c3aed"
+  },
+  {
+    "id": "meridian",
+    "title": "Meridian OS",
+    "category": "Product",
+    "year": "2024",
+    "description": "Operating-system inspired dashboard for creative teams. Spatial navigation and fluid windowing.",
+    "tags": [
+      "React",
+      "Motion",
+      "Spatial UI"
+    ],
+    "color": "#6366f1"
+  }
+]
